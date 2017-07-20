@@ -15,16 +15,21 @@
     <script type="text/javascript" src="https://x3dom.org/release/components/Geometry2D.js"></script>
     <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
   </head>
-
   <script>
   function alarm(){
     $('scene').append("<AudioClip url='mp3/siren.mp3' loop='false' enabled='true' />");
 
   }</script>
-
   <body >
-      <header>
-        <nav class="navbar navbar-inverse">
+    <section class="container">
+      <header class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="text-thin title-super">Strukturierung multimedialer informationen</h1>
+        </div>
+      </header>
+        <nav class="navbar navbar-inverse row">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,23 +38,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <span class="navbar-brand">Praktikum 2: Web-Tools</span>
             </div>
-
         <div id="myNavbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
             <li ><a href="paintvocado.html">Paint</a></li>
             <li><a href="matrix.html">Matrix</a></li>
-            <li class="active"><a href="sims.html">Sims</a></li>
-
+            <li class="active"><a href="sims.html">3D</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-      </header>
-
       <main class="container">
         <section class="row title">
           <h1>Sims</h1>
@@ -74,5 +75,6 @@
           </section>
         </section>
       </main>
+    <section>
   </body>
 </html>

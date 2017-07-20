@@ -3,6 +3,11 @@
 body{
 	font-family:sans-serif;
 }
+hr {
+  border: none;
+    height: 2px;
+    background-color: #868888;
+}
 
 input[type=number]{
 	width:50px;
@@ -86,4 +91,100 @@ canvas {
 .blockone {
   padding-left: 15%;
   padding-top: 8%;
+}
+
+
+
+
+
+
+.firstrow {
+  padding-top: 4%;
+}
+
+.text-features {
+  color: #86bbbb;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.Gus {
+  width: 20%;
+  height: 20%;
+  border-radius: 15px;
+}
+
+.title-super {
+  font-size: 200%;
+}
+
+.img-rounded {
+  border-radius: 15px;
+}
+
+.background {
+  background-color: #eaf4fb;
+}
+
+.backgroundd {
+  background-color: #e5fff2;
+}
+
+.logo{
+  width:45px;
+  height:45px;
+  border:0;
+}
+
+.w3-navbar button {
+  border:none;
+  padding:8px 16px;
+  display:block;
+}
+
+.w3-navbar li button{
+  cursor:pointer;
+}
+
+.w3-blue, .w3-hover-blue:hover {
+    color: #fff!important;
+    background-color: #86bbbb!important;
+}
+
+@media screen and (max-width: 600px)
+.w3-topnav, .w3-navbar {
+    text-align: center;
+}
+
+.w3-navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float:left;
+    display:block;padding:8px 16px;
+    border:none;outline:none;width:100%
+}
+
+.tab{
+  color: white;
+  font-weight: 300
+}
+
+.w3-navbar li {
+  float:left
+}
+
+.w3-navbar li a,.w3-navitem,.w3-navbar li .w3-btn,.w3-navbar li .w3-input {
+  display:block;padding:8px 16px
+  }
+
+.w3-navbar li .w3-btn,.w3-navbar li .w3-input {
+  border:none;outline:none;width:100%
+}
+
+.w3-navbar a,.w3-topnav a,.w3-sidenav a,.w3-dropdown-content a,.w3-accordion-content a,.w3-dropnav a {
+  text-decoration:none!important
 }
