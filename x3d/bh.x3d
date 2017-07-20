@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--Based on https://stackoverflow.com/questions/31843175/x3dom-layer-image-on-only-one-side-of-box-->
+	<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+	<X3D>
+		<Scene>
+			<Group>
+	      <Shape DEF='Right'>
+	        <IndexedFaceSet coordIndex='0 1 2 3' texCoordIndex='0 1 2 3'>
+	          <Coordinate DEF='Points' point='1 1 1 1 -1 1 1 -1 -1 1 1 -1 -1 1 1 -1 -1 1 -1 -1 -1 -1 1 -1'/>
+	          <TextureCoordinate DEF='DefaultTextureCoordinate' point='0 0 1 0 1 1 0 1'/>
+	        </IndexedFaceSet>
+	        <Appearance>
+	          <ImageTexture url='../img/bhside.jpg' />
+	          <TextureTransform DEF='RotateRight' rotation='-1.57'/>
+	        </Appearance>
+	      </Shape>
+
+	      <Shape DEF='Left'>
+	        <IndexedFaceSet coordIndex='7 6 5 4' texCoordIndex='0 1 2 3'>
+	          <Coordinate USE='Points'/>
+	          <TextureCoordinate USE='DefaultTextureCoordinate'/>
+	        </IndexedFaceSet>
+	        <Appearance>
+	          <ImageTexture url="../img/bhside.jpg" />
+	          <TextureTransform USE='RotateRight'/>
+	        </Appearance>
+	      </Shape>
+
+	      <Shape DEF='Bottom'>
+	        <IndexedFaceSet coordIndex='3 2 6 7' texCoordIndex='0 1 2 3'>
+	          <Coordinate USE='Points'/>
+	          <TextureCoordinate USE='DefaultTextureCoordinate'/>
+	        </IndexedFaceSet>
+	        <Appearance>
+	          <ImageTexture url="../img/bhside.jpg"/>
+	          <TextureTransform USE='RotateRight'/>
+	        </Appearance>
+	      </Shape>
+
+	      <Shape DEF='Top'>
+	        <IndexedFaceSet coordIndex='0 4 5 1' texCoordIndex='0 1 2 3'>
+	          <Coordinate USE='Points'/>
+	          <TextureCoordinate USE='DefaultTextureCoordinate'/>
+	        </IndexedFaceSet>
+	        <Appearance>
+	          <ImageTexture url="../img/bhside.jpg" />
+	          <TextureTransform DEF='Rotate180' rotation='3.14159'/>
+	        </Appearance>
+	      </Shape>
+
+	      <Shape DEF='Back'>
+	        <IndexedFaceSet coordIndex='0 3 7 4' texCoordIndex='0 1 2 3'>
+	          <Coordinate USE='Points'/>
+	          <TextureCoordinate USE='DefaultTextureCoordinate'/>
+	        </IndexedFaceSet>
+	        <Appearance>
+	          <ImageTexture url="../img/bhside.jpg" />
+	          <TextureTransform DEF='RotateLeft' rotation='1.57'/>
+	        </Appearance>
+	      </Shape>
+
+	      <Shape DEF='Front'>
+	        <IndexedFaceSet coordIndex='1 5 6 2' texCoordIndex='0 1 2 3'>
+	          <Coordinate USE='Points'/>
+	          <TextureCoordinate USE='DefaultTextureCoordinate'/>
+	        </IndexedFaceSet>
+	        <Appearance>
+	          <ImageTexture url="../img/bh.jpg"/>
+	          <TextureTransform USE='Rotate180'/>
+	        </Appearance>
+	      </Shape>
+	    </Group>
+		</Scene>
+	</X3D>

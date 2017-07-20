@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<head>
+  </head>
+
+<Scene>
+<!--rotation='1 0 0 1.57'-->
+<Group DEF='BAUM'>
+<Transform  translation='0 0 0'>
+  <Shape >
+    <Appearance>
+      <Material diffuseColor='0 0 0' ></Material>
+      <ImageTexture url='../img/baum.png' />
+    </Appearance>
+    <Cylinder height='3' radius='0.15' ></Cylinder>
+  </Shape>
+</Transform>
+
+<Transform  translation='0 1 0'>
+  <Shape>
+    <Appearance>
+      <Material diffuseColor='0 0 0' ></Material>
+      <ImageTexture url='../img/Ivy.jpg' />
+    </Appearance>
+    <Box size='1 1.3 1' ></Box>
+  </Shape>
+</Transform>
+</Group>
+
+</Scene>
+</X3D>

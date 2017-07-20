@@ -2,13 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Paint</title>
+    <title>SIMS</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"> </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      X3DOM_SECURITY_OFF = true;
+    </script>
+    <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
+    <script type="text/javascript" src="https://x3dom.org/release/components/Geometry2D.js"></script>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
   </head>
+
+  <script>
+  function alarm(){
+    $('scene').append("<AudioClip url='mp3/siren.mp3' loop='false' enabled='true' />");
+
+  }</script>
+
   <body >
       <header>
         <nav class="navbar navbar-inverse">
@@ -42,12 +55,24 @@
           <h1>Sims</h1>
         </section>
         <section class="row">
-
-
-
+          <section class="col-sm-8">
+            <x3d width='700px' height='550px'>
+              <scene>
+              <Viewpoint id="top" position="0 0 10" orientation=" 0 0 0 0" description="camera"></Viewpoint>
+              <Viewpoint id="front" position="0 -7 2" orientation="1 0 0 1.5" description="camera"></Viewpoint>
+              <Inline url="x3d/genesis.x3d" />
+              </scene>
+            </x3d>
+          </section>
+          <section class="col-sm-1">
+            <div class="row">
+              <button  onclick="document.getElementById('top').setAttribute('set_bind','true');" style="border: none; background: transparent; display: block">Top<br><img src="img/camera.png"></button>
+            </div>
+            <div class="row">
+              <button  onclick="document.getElementById('front').setAttribute('set_bind','true');" style="border: none; background: transparent; display: block">Front<br><img src="img/camera.png"></button>
+            </div>
+          </section>
         </section>
-
-
       </main>
   </body>
 </html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+
+    <scene>
+        <transform DEF="ball">
+        <shape>
+            <appearance>
+                <material diffuseColor='1 0 0'></material>
+            </appearance>
+            <sphere></sphere>
+        </shape>
+        </transform>
+
+        <timeSensor DEF="time" cycleInterval="2" loop="true"></timeSensor>
+        <PositionInterpolator DEF="move" key="0 .5 1" keyValue="0 0 0  0 0 10  0 0 0"></PositionInterpolator>
+        <Route fromNode="time" fromField ="fraction_changed" toNode="move" toField="set_fraction"></Route>
+        <Route fromNode="move" fromField ="value_changed" toNode="ball" toField="translation"></Route>
+
+    </scene>
+</X3D>
