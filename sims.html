@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SIMS</title>
+    <title>3D World</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,7 +19,14 @@
   function alarm(){
     $('scene').append("<AudioClip url='mp3/siren.mp3' loop='false' enabled='true' />");
 
-  }</script>
+  }
+  function changeColor(){
+      if(document.getElementById("auto__color").getAttribute('diffuseColor')=="0 1 0")
+          document.getElementById("auto__color").setAttribute('diffuseColor', '0 0.5 1');
+      else
+          document.getElementById("auto__color").setAttribute('diffuseColor', '0 1 0');
+  }
+  </script>
   <body >
     <section class="container">
       <header class="row">
@@ -53,28 +60,31 @@
     </nav>
       <main class="container">
         <section class="row title">
-          <h1>Sims</h1>
+          <h1>Click on the cars, if you can!</h1>
         </section>
         <section class="row">
-          <section class="col-sm-8">
-            <x3d width='700px' height='550px'>
+          <section class="col-md-9">
+            <x3d width='1050px' height='950px'>
               <scene>
-              <Viewpoint id="top" position="0 0 10" orientation=" 0 0 0 0" description="camera"></Viewpoint>
               <Viewpoint id="front" position="0 -7 2" orientation="1 0 0 1.5" description="camera"></Viewpoint>
-              <Inline url="x3d/genesis.x3d" />
+              <Viewpoint id="top" position="0 0 10" orientation=" 0 0 0 0" description="camera"></Viewpoint>
+              <Transform DEF='gus' scale='1.3 1.3 1.3'>
+                <Inline url="x3d/genesis.x3d" />
+              </Transform>
+              <Transform  DEF ="renn" scale=".1 .1 .1"  translation="2.455 2.48 0.8">
+                <Inline nameSpaceName="auto" url="auto.x3d" onclick="changeColor();" mapDEFToID="true"/>
+              </Transform>
               </scene>
             </x3d>
           </section>
-          <section class="col-sm-1">
-            <div class="row">
-              <button  onclick="document.getElementById('top').setAttribute('set_bind','true');" style="border: none; background: transparent; display: block">Top<br><img src="img/camera.png"></button>
-            </div>
-            <div class="row">
-              <button  onclick="document.getElementById('front').setAttribute('set_bind','true');" style="border: none; background: transparent; display: block">Front<br><img src="img/camera.png"></button>
-            </div>
+          <section class="col-md-2">
           </section>
+            <section class="col-md-1">
+                <button  onclick="document.getElementById('top').setAttribute('set_bind','true');" style="border: none; background: transparent; display: block">Top<br><img src="img/camera.png"></button>
+                <button  onclick="document.getElementById('front').setAttribute('set_bind','true');" style="border: none; background: transparent; display: block">Front<br><img src="img/camera.png"></button>
+            </section>
         </section>
       </main>
-    <section>
+    </section>
   </body>
 </html>

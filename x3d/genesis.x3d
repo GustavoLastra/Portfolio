@@ -6,7 +6,8 @@
 		<meta name="generator" content="Blender 2.70 (sub 0)" />
 	</head>
 	<Scene>
-    <!-- <Background skyColor="0.05 0.05 0.1"/>-->
+    <Background skyColor=".3 .8 1"/>
+
     <!-- Fußweg -->
       <Transform id="f1" translation="0 1.45 .05" scale="3 0.1 1"  >
       <Inline url="fussweg.x3d" />
@@ -188,15 +189,14 @@
 	<Inline url="baum2.x3d" />
 	</Transform>
 
+
 			<!-- car rotation="1 0 0 1.5708-->
 
-			<Transform rotation='0 1 0 0'>
-			  <Transform rotation='0 0 1 0'>
-			    <Transform id="car" DEF ="car" scale=".15 .15 .15" onclick="alarm()" translation="2 2 .65" >
-			       <Inline url="police.x3d" />
-			    </Transform>
-			  </Transform>
+		  <Transform DEF ="car" scale=".15 .15 .15" onclick="alarm()" translation="2 2 .65" >
+			 <Inline url="police.x3d" />
 			</Transform>
+
+
 
 
 
