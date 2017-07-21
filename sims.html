@@ -11,53 +11,41 @@
     <script>
       X3DOM_SECURITY_OFF = true;
     </script>
+    <script type="text/javascript" src="js/cars.js"></script>
     <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
     <script type="text/javascript" src="https://x3dom.org/release/components/Geometry2D.js"></script>
     <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
   </head>
-  <script>
-  function alarm(){
-    $('scene').append("<AudioClip url='mp3/siren.mp3' loop='false' enabled='true' />");
-
-  }
-  function changeColor(){
-      if(document.getElementById("auto__color").getAttribute('diffuseColor')=="0 1 0")
-          document.getElementById("auto__color").setAttribute('diffuseColor', '0 0.5 1');
-      else
-          document.getElementById("auto__color").setAttribute('diffuseColor', '0 1 0');
-  }
-  </script>
   <body >
-    <section class="container">
-      <header class="row">
-        <div class="col-md-6">
-        </div>
-        <div class="col-md-6 text-right text-uppercase">
-          <h1 class="text-thin title-super">Strukturierung multimedialer informationen</h1>
-        </div>
-      </header>
-        <nav class="navbar navbar-inverse row">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-        <div id="myNavbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li ><a href="paintvocado.html">Paint</a></li>
-            <li><a href="matrix.html">Matrix</a></li>
-            <li class="active"><a href="sims.html">3D</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+  </head>
+  <body >
+    <header>
+      <nav class="navbar navbar-inverse row">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+      <div id="myNavbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li ><a href="paintvocado.html">Paint</a></li>
+          <li><a href="matrix.html">Matrix</a></li>
+          <li><a href="sims.html">3D</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <div class="col-md-12 text-center text-uppercase">
+    <h1 class="text-thin title-super">SMI</h1>
+  </div>
+  </header>
       <main class="container">
         <section class="row title">
           <h1>Click on the cars, if you can!</h1>
@@ -85,6 +73,5 @@
             </section>
         </section>
       </main>
-    </section>
   </body>
 </html>

@@ -11,38 +11,37 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <section class="container">
-      <header class="row">
-        <div class="col-md-6">
-        </div>
-        <div class="col-md-6 text-right text-uppercase">
-          <h1 class="text-thin title-super">Strukturierung multimedialer informationen</h1>
-        </div>
-      </header>
-        <nav class="navbar navbar-inverse row">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-        <div id="myNavbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li ><a href="paintvocado.html">Paint</a></li>
-            <li class="active"><a href="matrix.html">Matrix</a></li>
-            <li><a href="sims.html">3D</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+    <header>
+      <nav class="navbar navbar-inverse row">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+      <div id="myNavbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li ><a href="paintvocado.html">Paint</a></li>
+          <li><a href="matrix.html">Matrix</a></li>
+          <li><a href="sims.html">3D</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <div class="col-md-12 text-center text-uppercase">
+    <h1 class="text-thin title-super">SMI</h1>
+  </div>
+    </header>
+
+
     <main class="container">
-      <h1 class="title">Multiplikation von zwei Matrizen mittels JavaScript</h1>
+      <h1 class="title">Matrizen Multiplikator</h1>
       <section class="row ">
         <section class="col-sm-5 block blockone">
           <input id="multi" type="button" value="A*B" class="btn btn-default "  onClick="getMultiplicationResult('AB','tMatrixA','tMatrixB')"/>
@@ -154,6 +153,5 @@
         </section>
       </section>
     </main>
-  </section>
   </body>
 </html>
