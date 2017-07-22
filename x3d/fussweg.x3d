@@ -6,6 +6,7 @@
 		<meta name="generator" content="Blender 2.70 (sub 0)" />
 	</head>
 	<Scene>
+			<!--Fußweg Model-->
   <Transform  translation='0 0 0' >
     <Shape DEF='street'>
       <Appearance>

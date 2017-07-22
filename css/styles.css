@@ -3,6 +3,7 @@
 body{
 	font-family:sans-serif;
 }
+
 hr {
   border: none;
     height: 2px;
@@ -21,9 +22,12 @@ input[type=button]{
 	width:100px;
 }
 
+main {
+	margin: 5%;
+}
+
 .matrixFieldset{
 	border-style:none;
-
 	margin-left:2.5%;
 	margin-right:2.5%;
 	padding:2%;
@@ -48,7 +52,6 @@ legend{
 #tErgMatrix {
 	margin-left: 45%;
 }
-
 
 canvas {
     padding-left: 0;
@@ -93,11 +96,6 @@ canvas {
   padding-top: 8%;
 }
 
-
-
-
-
-
 .firstrow {
   padding-top: 4%;
 }
@@ -125,7 +123,7 @@ canvas {
 }
 
 .background {
-  background-color: #eaf4fb;
+  background-color: #fafafa;
 }
 
 .backgroundd {
@@ -187,4 +185,42 @@ canvas {
 
 .w3-navbar a,.w3-topnav a,.w3-sidenav a,.w3-dropdown-content a,.w3-accordion-content a,.w3-dropnav a {
   text-decoration:none!important
+}
+
+/*FOOTER*/
+
+footer {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:#f2f2f2;
+	position: relative;
+	padding: 1em 1em;
+	text-align:center;
+	font-size:0.7em;
+	color:black;
+}
+
+.impressum{
+	color:black;
+	font-size:0.9em;
+	text-align:center;
+}
+
+footer img{
+	width:4em;
+
+}
+
+footer a{
+	color: black;                  /* Schriftfarbe schwarz */
+	text-decoration: none;         /* Unterstreichung entfernen */
+	/* padding:1em 2.5em; */
+}
+
+footer a:hover,
+footer a:active{
+	color: #22ab03;
 }

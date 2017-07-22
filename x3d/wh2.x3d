@@ -2,6 +2,7 @@
 	<!--Based on https://stackoverflow.com/questions/31843175/x3dom-layer-image-on-only-one-side-of-box-->
 	<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
 	<X3D>
+		<!--White house 2 Model-->
 		<Scene>
 			<Group>
 	      <Shape DEF='Right'>

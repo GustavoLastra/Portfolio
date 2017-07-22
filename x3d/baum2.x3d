@@ -3,9 +3,8 @@
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<head>
   </head>
-
 <Scene>
-
+<!--Baum Model-->
 <Group DEF='BAUM2'>
 <Transform  translation='0 0 0' >
   <Shape >
@@ -16,7 +15,6 @@
     <Cylinder height='2.5' radius='0.15' ></Cylinder>
   </Shape>
 </Transform>
-
 <Transform translation='0 1 0'>
 <Shape>
   <Appearance>
@@ -27,6 +25,5 @@
 </Shape>
 </Transform>
 </Group>
-
 </Scene>
 </X3D>
