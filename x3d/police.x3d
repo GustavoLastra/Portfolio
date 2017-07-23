@@ -338,14 +338,14 @@
 		<!--Animations-->
 
 
-			<timeSensor DEF="time" cycleInterval="9" loop="true"></timeSensor>
+			<timeSensor DEF="time" cycleInterval="16" loop="true"></timeSensor>
 		<!--Movement animation-->
-			<PositionInterpolator DEF="move" key="0 .1 .2 .3 .4 .5 .6 .7 .8" keyValue="-28 -25 0, -28 -3 0, -25 2 0, -3 2 0 , 2 0 0, 2 -25 0, 0 -28 0 , -25 -28 0, -28 -25 0 "></PositionInterpolator>
+			<PositionInterpolator DEF="move" key="0 .125 .25 .375 .5 .625 .75 .875 1" keyValue="-28 -25 0, -28 -3 0, -25 2 0, -3 2 0 , 2 0 0, 2 -25 0, 0 -28 0 , -25 -28 0, -28 -25 0 "></PositionInterpolator>
 			<Route fromNode="time" fromField ="fraction_changed" toNode="move" toField="set_fraction"></Route>
 			<Route fromNode="move" fromField ="value_changed" toNode="Car_Mesh_TRANSFORM" toField="translation"></Route>
 
 		<!--Orientation animation-->
-			<OrientationInterpolator DEF='or' key='0 .1 .2 .3 .4 .5 .6 .7 .8' keyValue='0 0 0 0, 0 0 0 0  , 0 0 1 -1.5708 , 0 0 1 -1.5708 , 0 0 1 -3.1416 , 0 0 1 -3.1416 , 0 0 1 -4.7124, 0 0 1 -4.7124,  0 0 0 0 '/>
+			<OrientationInterpolator DEF='or' key='0 .125 .25 .375 .5 .625 .75 .875 1' keyValue='0 0 0 0, 0 0 0 0  , 0 0 1 -1.5708 , 0 0 1 -1.5708 , 0 0 1 -3.1416 , 0 0 1 -3.1416 , 0 0 1 -4.7124, 0 0 1 -4.7124,  0 0 0 0 '/>
 			<ROUTE fromNode='time' fromField='fraction_changed' toNode='or' toField='set_fraction'/>
 			<ROUTE fromNode='or' fromField='value_changed' toNode='Car_Mesh_TRANSFORM' toField='set_rotation'/>
 
