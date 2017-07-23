@@ -17,8 +17,6 @@
     <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
   </head>
   <body >
-  </head>
-  <body >
     <header>
       <nav class="navbar navbar-inverse row">
         <div class="container-fluid">
@@ -54,7 +52,7 @@
           <section class="col-md-9">
 
             <!--Here is the x3d scene-->
-            <x3d width='1050px' height='950px'>
+            <x3d width='1050px' height='750px'>
               <scene>
               <Viewpoint id="front" position="0 -7 2" orientation="1 0 0 1.5" description="camera"></Viewpoint>
               <Viewpoint id="top" position="0 0 10" orientation=" 0 0 0 0" description="camera"></Viewpoint>
@@ -63,7 +61,7 @@
               <Transform DEF='gus' scale='1.3 1.3 1.3'>
                 <Inline url="x3d/genesis.x3d" />
               </Transform>
-              
+
               <!--Here is the inline of "auto" (rennauto)-->
               <Transform  DEF ="renn" scale=".1 .1 .1"  translation="2.455 2.48 0.8">
                 <Inline nameSpaceName="auto" url="x3d/auto.x3d" onclick="changeColor();" mapDEFToID="true"/>

@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
-	<head>
-
-	</head>
 	<!--Genesis Model-->
 	<Scene>
     <Background skyColor=".3 .8 1"/>
 
     <!-- Fußweg -->
-      <Transform id="f1" translation="0 1.45 .05" scale="3 0.1 1"  >
+      <Transform  id="f1" translation="0 1.45 .05" scale="3 0.1 1"  >
       <Inline url="fussweg.x3d" />
       </Transform>
-
-      <Transform id="f2" translation="0 -1.45 .05" scale="3 0.1 1"  >
-      <Inline url="fussweg.x3d" />
+      <Transform  id="f2" translation="0 -1.45 .05" scale="3 0.1 1"  >
+			<Inline url="fussweg.x3d" />
       </Transform>
-      <Transform id="f3" translation="0 2.55 .05" scale="3 0.1 1"  >
-      <Inline url="fussweg.x3d" />
+      <Transform  id="f3" translation="0 2.55 .05" scale="3 0.1 1"  >
+			<Inline url="fussweg.x3d" />
       </Transform>
-      <Transform id="f4" translation="0 -2.55 .05" scale="3 0.1 1"  >
-      <Inline url="fussweg.x3d" />
+      <Transform  id="f4" translation="0 -2.55 .05" scale="3 0.1 1"  >
+			<Inline url="fussweg.x3d" />
       </Transform>
 
     <!--Vertical Fußweg -->
