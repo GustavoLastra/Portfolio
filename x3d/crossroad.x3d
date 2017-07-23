@@ -3,8 +3,6 @@
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<head>
 		<!-- Kreuzung Model-->
-		<meta name="filename" content="Deer.x3d" />
-		<meta name="generator" content="Blender 2.70 (sub 0)" />
 	</head>
 	<Scene>
   <Transform  translation='0 0 0' >

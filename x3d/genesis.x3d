@@ -62,66 +62,66 @@
       </Transform>
 
     <!--Vertical streets -->
-      <Transform id="vs1" translation="-2 3 0" rotation="0 0 1 1.5708" scale=".5 .5 .5" >
+      <Transform id="vs1" translation="-2 3 0" rotation="0 0 1 1.5708" scale="1 1 1" >
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs2" translation="-2 1 0" rotation="0 0 1 1.5708" scale=".5 .5 .5" >
+      <Transform id="vs2" translation="-2 1 0" rotation="0 0 1 1.5708" scale="1 1 1" >
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs3" translation="-2 0 0" rotation="0 0 1 1.5708" scale=".5 .5 .5" >
+      <Transform id="vs3" translation="-2 0 0" rotation="0 0 1 1.5708" scale="1 1 1" >
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs4" translation="-2 -1 0" rotation="0 0 1 1.5708" scale=".5 .5 .5">
+      <Transform id="vs4" translation="-2 -1 0" rotation="0 0 1 1.5708" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs5" translation="-2 -3 0" rotation="0 0 1 1.5708" scale=".5 .5 .5">
+      <Transform id="vs5" translation="-2 -3 0" rotation="0 0 1 1.5708" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs6" translation="2 3 0" rotation="0 0 1 1.5708" scale=".5 .5 .5" >
+      <Transform id="vs6" translation="2 3 0" rotation="0 0 1 1.5708" scale="1 1 1" >
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs7" translation="2 1 0" rotation="0 0 1 1.5708" scale=".5 .5 .5">
+      <Transform id="vs7" translation="2 1 0" rotation="0 0 1 1.5708" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs8" translation="2 0 0" rotation="0 0 1 1.5708" scale=".5 .5 .5">
+      <Transform id="vs8" translation="2 0 0" rotation="0 0 1 1.5708" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs9" translation="2 -1 0" rotation="0 0 1 1.5708" scale=".5 .5 .5">
+      <Transform id="vs9" translation="2 -1 0" rotation="0 0 1 1.5708" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="vs10" translation="2 -3 0" rotation="0 0 1 1.5708" scale=".5 .5 .5">
+      <Transform id="vs10" translation="2 -3 0" rotation="0 0 1 1.5708" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
 
     <!--Horizontal streets -->
-      <Transform id="hs1" translation="-1 2 0" scale=".5 .5 .5">
+      <Transform id="hs1" translation="-1 2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs2" translation="0 2 0" scale=".5 .5 .5">
+      <Transform id="hs2" translation="0 2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs3" translation="1 2 0" scale=".5 .5 .5">
+      <Transform id="hs3" translation="1 2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs4" translation="-1 -2 0" scale=".5 .5 .5">
+      <Transform id="hs4" translation="-1 -2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs5" translation="0 -2 0" scale=".5 .5 .5">
+      <Transform id="hs5" translation="0 -2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs6" translation="1 -2 0" scale=".5 .5 .5">
+      <Transform id="hs6" translation="1 -2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs7" translation="-3 2 0" scale=".5 .5 .5">
+      <Transform id="hs7" translation="-3 2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs8" translation="3 2 0" scale=".5 .5 .5">
+      <Transform id="hs8" translation="3 2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs9" translation="3 -2 0" scale=".5 .5 .5">
+      <Transform id="hs9" translation="3 -2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
-      <Transform id="hs10" translation="-3 -2 0" scale=".5 .5 .5">
+      <Transform id="hs10" translation="-3 -2 0" scale="1 1 1">
       <Inline url="street.x3d" />
       </Transform>
 
@@ -178,10 +178,5 @@
 	   <Transform id="baum4"  translation="-3 -3 0.7" scale="0.22 0.22 0.22" rotation="1 0 0 1.57">
 	  	<Inline url="baum2.x3d" />
 	   </Transform>
-
-	 <!-- Polizei  -->
-		 <Transform DEF ="car" scale=".15 .15 .15" onclick="alarm()" translation="2 2 .65" >
-			<Inline url="police.x3d" />
-		 </Transform>
     </Scene>
 </X3D>
