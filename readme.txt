@@ -1,3 +1,13 @@
+----- 3D World -----
+
+Intructions
+Click on the cars, if you can!
+
+In the 3D world you can see a small town with some houses, trees, as well as
+a street, on which it is shown a race car and a police car. You can click on the cars to see
+some effects. The race car will change the color of the car body and the police car will
+turn on the sirene (a sound).
+
 Quelle 3D World:
 
 grass : https://www.template.net/design-templates/textures/grass-texture/
@@ -16,16 +26,18 @@ Ivy und Bush: www.texture.com
 
 Tutorials:
 https://doc.x3dom.org/tutorials/
+https://doc.x3dom.org/tutorials/index.html
+https://doc.x3dom.org/tutorials/basics/htmlCSS/
+https://doc.x3dom.org/tutorials/models/inline/index.html
+https://doc.x3dom.org/tutorials/animationInteraction/picking/index.html
+https://doc.x3dom.org/tutorials/animationInteraction/animate/index.html
+https://doc.x3dom.org/tutorials/lighting/lights/index.html
+https://moodle2.tu-ilmenau.de/pluginfile.php/29177/mod_resource/content/3/Tutorial.pdf
 
 Doku:
 https://doc.x3dom.org/index.html
 
-Intructions
--3D World
-
-Click on the cars, if you can!
-
-- Paint Tool -
+----- Paint Tool -----
 
 Welcome to our paint tool, we hope you have a good time ;)
 
@@ -49,21 +61,21 @@ This buttons are on the left side of the canvas.
 You have to press one time on the button to use the tool.(The button will not remain clicked but the tool you selected is the one you are using)
 Just press and then go to the canvas, the function that you selected will be executed.
 
-- Pencil tool -
+Pencil tool:
 You click the button one time. Then you can select the color (stroke) and the thickness of your pencil.
 
-- Rectangle, Circle Tool -
+Rectangle, Circle Tool:
 First click the button one time and then you can control the color that you want the rectangle to be stroked with,
 the margin of the figure, you can make this margin line thicker or slimmer with the thickness controller.
 You can also select which color do you want your figure to be filled with.
 
- - Line tool -
+Line tool:
 Click this button one time. Then choose the color of the line with the stroke controller. Choose the thickness of the line
 with the thickness controller. And then point your mouse on the canvas, click the right button of your mouse and don't release it,
 the line will be draw until you stop pressing the mouse. (This is the length of your line)
 To position your line move your mouse in the direction you want your line to be draw.
 
-- Avocado tool -
+Avocado tool:
 Click one time on the "Avocado" button. Then select the width and the height for it. And then click anywhere in the canvas.
 Where you click is where it will be placed. If you want to put more than one is not necessary to click the button again,
 you can simply click another place in the canvas and will be place there, as many times as you click.
@@ -71,29 +83,48 @@ Try it! Please go crazy with Paintvocado! #AvocadoLove
 (The cute avocado under the controllers is only there to say hello, if you click it, nothing happens.
  But isn't it the cutest little thing?)
 
-- Clear tool -
+Clear tool:
 To clear the whole canvas click "clear" one time. The content should go away.
 
-- Save tool -
+Save tool:
 To save the drawing you have done just click one time on the "save" button. It will be save temporally.
 You can draw anything, the times you want and it will remain store, to restore it see "Restore tool"
 --> If you want to download the picture see "Download tool"
 
-- Restore tool -
+Restore tool:
 If you click this button one time it will restore the picture you saved (the last time)
 
-Download tool
+Download tool:
 Click this button one time and it downloads your drawing with a "png" format with the name "Paintvocado"
 -> Attention:
 You can download all your work of art except the ones made with avocados.
 Avocados can not be downloaded : "Tainted canvases may not be exported."
 https://stackoverflow.com/questions/20424279/canvas-todataurl-securityerror
 
-- Upload tool -
+Upload tool:
 Click the one time the "choose file" button to upload a picture from your device.
 
+Quellen Paint:
 
-- Matrix Multiplication Tool - Description -
+canvas : https://www.w3schools.com/html/html5_canvas.asp
+drawline : https://codepen.io/JTParrett/pen/hpixf
+save and restore : http://www.informit.com/articles/article.aspx?p=1903884&seqNum=7
+save : http://www.html5canvastutorials.com/advanced/html5-canvas-save-drawing-as-an-image/
+download : https://stackoverflow.com/questions/32693210/download-canvas-image-using-js-jquery
+upload : https://stackoverflow.com/questions/22255580/javascript-upload-image-file-and-draw-it-into-a-canvas
+upload style :http://markusslima.github.io/bootstrap-filestyle/
+fotos: http://www.flaticon.com/free-icons/paint_71
+rectangle: https://pixabay.com/p-1363283/?no_redirect
+line: https://openclipart.org/detail/197867/mono-line-normal-end
+circle: https://openclipart.org/detail/246392/industrial-push-button-black
+
+Avocados can not be downloaded : "Tainted canvases may not be exported."
+https://stackoverflow.com/questions/20424279/canvas-todataurl-securityerror
+
+"Although you can use images without CORS approval in your canvas, doing so taints the canvas. Once a canvas has been tainted, you can no longer pull data back out of the canvas. For example, you can no longer use the canvas toBlob(), toDataURL(), or getImageData() methods; doing so will throw a security error.
+This protects users from having private data exposed by using images to pull information from remote web sites without permission."
+
+----- Matrix Multiplication Tool - Description -----
 
 Matrix multiplication is a operation that produces a matrix from two matrices A and B
 in  more detail, if A is an n x m matrix and B is an m x p matrix, their product AB is an n x p matrix in which the m entries across a row of A are multiplied with the m entries down a columns of B and dummed to produce an entry of AB
@@ -110,7 +141,7 @@ Matrix Multiplication Tool - Usage:
 - by clicking the button "A*B" the matrix multiplication is started
 
 Matrix Multiplication - calculation steps:
-Preprocessing
+Preprocessing:
 (1) get values of input matrices A and B
 (2) save values in multidimensional array
 (3) check if matrix multiplication condition is complied
@@ -118,13 +149,13 @@ Preprocessing
 (3.1) if condition is complied calculation is started
 (3.2) else error message is displayed and calculation is canceled
 
-Calculation
+Calculation:
 (4) multiplication Matrix A and B by Falk scheme
 (5) save values of resulting Matrix in multidimensional array
 (6) set values of result matrix table with values of multidimensional array
 
 
-Sources
+Sources:
 https://wiki.selfhtml.org/wiki/JavaScript
 https://wiki.selfhtml.org/wiki/JavaScript/Array
 https://www.w3schools.com/jquery/default.asp
@@ -176,25 +207,3 @@ https://www.sitepoint.com/jquery-set-specific-table-cell/
 https://stackoverflow.com/questions/4737476/changing-table-cell-contents
 https://stackoverflow.com/questions/4737476/changing-table-cell-contents
 https://stackoverflow.com/questions/23013484/jquery-set-value-of-td-in-a-table
-
-
-
-- Quelle  Paint-
-
-canvas : https://www.w3schools.com/html/html5_canvas.asp
-drawline : https://codepen.io/JTParrett/pen/hpixf
-save and restore : http://www.informit.com/articles/article.aspx?p=1903884&seqNum=7
-save : http://www.html5canvastutorials.com/advanced/html5-canvas-save-drawing-as-an-image/
-download : https://stackoverflow.com/questions/32693210/download-canvas-image-using-js-jquery
-upload : https://stackoverflow.com/questions/22255580/javascript-upload-image-file-and-draw-it-into-a-canvas
-upload style :http://markusslima.github.io/bootstrap-filestyle/
-fotos: http://www.flaticon.com/free-icons/paint_71
-rectangle: https://pixabay.com/p-1363283/?no_redirect
-line: https://openclipart.org/detail/197867/mono-line-normal-end
-circle: https://openclipart.org/detail/246392/industrial-push-button-black
-
-Avocados can not be downloaded : "Tainted canvases may not be exported."
-https://stackoverflow.com/questions/20424279/canvas-todataurl-securityerror
-
-"Although you can use images without CORS approval in your canvas, doing so taints the canvas. Once a canvas has been tainted, you can no longer pull data back out of the canvas. For example, you can no longer use the canvas toBlob(), toDataURL(), or getImageData() methods; doing so will throw a security error.
-This protects users from having private data exposed by using images to pull information from remote web sites without permission."
