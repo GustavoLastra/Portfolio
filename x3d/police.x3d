@@ -32,7 +32,7 @@
 					<Shape>
 						<Appearance>
 							<ImageTexture DEF="IM_Reflection_png"
-							              url='"71913_Simple_BGE_Police_Car/textures/Reflection.png" "Reflection.png" "/Users/gustavolastra/Downloads/71913_Simple_BGE_Police_Car/textures/Reflection.png"'
+							              url='"../img/Reflection.png" "Reflection.png" "../img/Reflection.png"'
 							              />
 							<TextureTransform
 							                  translation="0.000000 0.000000"
@@ -137,6 +137,7 @@
 					</Shape>
 				</Group>
 			</Transform>
+
 			<Transform DEF="TireFD_TRANSFORM"
 			           translation="0.716543 0.750192 -0.514307"
 			           scale="1.000000 1.000000 1.000000"
@@ -148,6 +149,7 @@
 				           rotation="1.000000 0.000000 0.000000 0.000000"
 				           >
 					<Group DEF="group_ME_Circle">
+					<Transform DEF= "wheel">
 						<Shape>
 							<Appearance>
 								<Material DEF="MA_Wheel"
@@ -192,9 +194,11 @@
 								<Coordinate USE="coords_ME_Circle" />
 							</IndexedFaceSet>
 						</Shape>
+						</Transform>
 					</Group>
 				</Transform>
 			</Transform>
+
 			<Transform DEF="TireRD_TRANSFORM"
 			           translation="0.716543 -0.874245 -0.514307"
 			           scale="1.000000 1.000000 1.000000"
@@ -239,6 +243,7 @@
 					</Group>
 				</Transform>
 			</Transform>
+
 			<Transform DEF="TireRP_TRANSFORM"
 			           translation="-0.706613 -0.874245 -0.514307"
 			           scale="1.000000 1.000000 1.000000"
@@ -283,6 +288,7 @@
 					</Group>
 				</Transform>
 			</Transform>
+
 			<Transform DEF="TireFP_TRANSFORM"
 			           translation="-0.706613 0.750192 -0.514307"
 			           scale="1.000000 1.000000 1.000000"
@@ -329,15 +335,44 @@
 			</Transform>
 		</Transform>
 
-		<timeSensor DEF="time" cycleInterval="9" loop="true"></timeSensor>
-	<!--Movement animation-->
-		<PositionInterpolator DEF="move" key="0 .1 .2 .3 .4 .5 .6 .7 .8" keyValue="-28 -25 0, -28 -3 0, -25 2 0, -3 2 0 , 2 0 0, 2 -25 0, 0 -28 0 , -25 -28 0, -28 -25 0 "></PositionInterpolator>
-		<Route fromNode="time" fromField ="fraction_changed" toNode="move" toField="set_fraction"></Route>
-		<Route fromNode="move" fromField ="value_changed" toNode="Car_Mesh_TRANSFORM" toField="translation"></Route>
+		<!--Animations-->
 
-	<!--Orientation animation-->
-		<OrientationInterpolator DEF='or' key='0 .1 .2 .3 .4 .5 .6 .7 .8' keyValue='0 0 0 0, 0 0 0 0  , 0 0 1 -1.5708 , 0 0 1 -1.5708 , 0 0 1 -3.1416 , 0 0 1 -3.1416 , 0 0 1 -4.7124, 0 0 1 -4.7124,  0 0 0 0 '/>
-		<ROUTE fromNode='time' fromField='fraction_changed' toNode='or' toField='set_fraction'/>
-		<ROUTE fromNode='or' fromField='value_changed' toNode='Car_Mesh_TRANSFORM' toField='set_rotation'/>
+
+			<timeSensor DEF="time" cycleInterval="9" loop="true"></timeSensor>
+		<!--Movement animation-->
+			<PositionInterpolator DEF="move" key="0 .1 .2 .3 .4 .5 .6 .7 .8" keyValue="-28 -25 0, -28 -3 0, -25 2 0, -3 2 0 , 2 0 0, 2 -25 0, 0 -28 0 , -25 -28 0, -28 -25 0 "></PositionInterpolator>
+			<Route fromNode="time" fromField ="fraction_changed" toNode="move" toField="set_fraction"></Route>
+			<Route fromNode="move" fromField ="value_changed" toNode="Car_Mesh_TRANSFORM" toField="translation"></Route>
+
+		<!--Orientation animation-->
+			<OrientationInterpolator DEF='or' key='0 .1 .2 .3 .4 .5 .6 .7 .8' keyValue='0 0 0 0, 0 0 0 0  , 0 0 1 -1.5708 , 0 0 1 -1.5708 , 0 0 1 -3.1416 , 0 0 1 -3.1416 , 0 0 1 -4.7124, 0 0 1 -4.7124,  0 0 0 0 '/>
+			<ROUTE fromNode='time' fromField='fraction_changed' toNode='or' toField='set_fraction'/>
+			<ROUTE fromNode='or' fromField='value_changed' toNode='Car_Mesh_TRANSFORM' toField='set_rotation'/>
+
+			<!--Orientation wheel-->
+			<timeSensor DEF="t" cycleInterval="8" loop="true"> </timeSensor>
+				<OrientationInterpolator DEF="rotate_wheels" key="0 0.5 1" keyValue="1 0 0 6.28, 1 0 0 3.14, 1 0 0 0 "> </OrientationInterpolator>
+				<Route fromNode="t" fromField ="fraction_changed" toNode="rotate_wheels" toField="set_fraction"> </Route>
+				<Route fromNode="rotate_wheels" fromField ="value_changed" toNode="TireFD_TRANSFORM" toField="set_rotation"> </Route>
+
+			<!--Orientation wheel-->
+			<timeSensor DEF="t" cycleInterval="8" loop="true"> </timeSensor>
+				<OrientationInterpolator DEF="rotate_wheels" key="0 0.5 1" keyValue="1 0 0 6.28, 1 0 0 3.14, 1 0 0 0 "> </OrientationInterpolator>
+				<Route fromNode="t" fromField ="fraction_changed" toNode="rotate_wheels" toField="set_fraction"> </Route>
+				<Route fromNode="rotate_wheels" fromField ="value_changed" toNode="TireRD_TRANSFORM" toField="set_rotation"> </Route>
+
+			<!--Orientation wheel-->
+			<timeSensor DEF="t" cycleInterval="8" loop="true"> </timeSensor>
+				<OrientationInterpolator DEF="rotate_wheels" key="0 0.5 1" keyValue="1 0 0 6.28, 1 0 0 3.14, 1 0 0 0 "> </OrientationInterpolator>
+				<Route fromNode="t" fromField ="fraction_changed" toNode="rotate_wheels" toField="set_fraction"> </Route>
+				<Route fromNode="rotate_wheels" fromField ="value_changed" toNode="TireRP_TRANSFORM" toField="set_rotation"> </Route>
+
+			<!--Orientation wheel-->
+				<timeSensor DEF="t" cycleInterval="8" loop="true"> </timeSensor>
+				<OrientationInterpolator DEF="rotate_wheels" key="0 0.5 1" keyValue="1 0 0 6.28, 1 0 0 3.14, 1 0 0 0 "> </OrientationInterpolator>
+				<Route fromNode="t" fromField ="fraction_changed" toNode="rotate_wheels" toField="set_fraction"> </Route>
+				<Route fromNode="rotate_wheels" fromField ="value_changed" toNode="TireFP_TRANSFORM" toField="set_rotation"> </Route>
+
+
 	</Scene>
 </x3d>
