@@ -62,7 +62,9 @@
   background-color: rgba(51, 176, 183, 0.18);
 }
 
+.row {
 
+}
 
 .center-content {
   padding: 2.5% 5%;
@@ -109,7 +111,8 @@
 }
 
 h1 {
-
+  margin-top: 20%;
+  margin-bottom: 20%;
   font-size: 200%;
   color: #00796B;
   display: inline;
@@ -134,6 +137,14 @@ h4 {
   font-size: 100%;
   color: #757575;
   line-height: 17%;
+}
+
+header {
+  margin-bottom: 4%;
+}
+
+main {
+  margin: 2%;
 }
 
 .logo{

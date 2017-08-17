@@ -4,6 +4,14 @@ body{
 	font-family:sans-serif;
 }
 
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
 hr {
   border: none;
     height: 2px;
@@ -20,10 +28,6 @@ input[type=number]{
 input[type=button]{
 	margin-top:4%;
 	width:100px;
-}
-
-main {
-	margin: 5%;
 }
 
 .matrixFieldset{
@@ -54,8 +58,7 @@ legend{
 }
 
 canvas {
-    padding-left: 0;
-    padding-right: 0;
+		padding: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -188,6 +191,11 @@ canvas {
 }
 
 /*FOOTER*/
+.container {
+min-height: 100%;
+position: relative;
+overflow: hidden;
+}
 
 footer {
 	top: 0;

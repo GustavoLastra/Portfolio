@@ -10,7 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"> </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDhWWNW_45q9qMr8Ft8c4SmJVEB66pLCyQ"></script>
   </head>
   <body >
     <header>
@@ -33,7 +32,7 @@
              <ul class="dropdown-menu">
                <li><a href="paintvocado.html">Paint</a></li>
                <li><a href="matrix.html">Matrix</a></li>
-               <li><a href="sims.html">3D</a></li>
+               <li><a href="sims.html">3D World</a></li>
                <li><a href="minigame.html">Mini Game</a></li>
              </ul>
            </li>
@@ -44,45 +43,13 @@
     </div>
   </nav>
   <div class="row text-center text-uppercase">
-    <h1 class="text-thin title-super">Resume</h1>
+    <h1 class="text-thin title-super">Minigame</h1>
   </div>
   </header>
-
-  <main class="container">
-    <section id="headerSection" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
-    </section>
-
-    <section id="workSection" class="center-content">
-      <h2>Work Experience</h2>
-      <div id="workExperience" class=" work-entry"><hr></div>
-    </section>
-
-    <section id="educationSection" class="center-content">
-      <h2>Education</h2>
-      <div id="education" class=" education-entry"><hr></div>
-    </section>
-
-    <section id="projectSection" class="center-content">
-      <h2>Projects</h2>
-      <div class=" row" id="projects">
-        <div id="entry" class="project-entry"><hr></div>
-      </div>
-    </section>
-
-    <section id="languageSection" class="center-content">
-      <h2>Languages</h2>
-      <div id="language" class=" language-entry"><hr></div>
-    </section>
-
-    <section id="mapSection" class="center-content">
-      <div id="mapDiv">
-        <h2>Where I've lived, studied or worked</h2>
-      </div>
-    </section>
-  </main>
-  <script src="js/helper.js"></script>
-  <script src="js/resumeBuilder.js"></script>
+    <main class="container">
+      <section class="row" id="game">
+      </section>
+    </main>
     <footer>
       <h4>Contact information</h4>
       <p class="impressum">Verantwortlicher Redakteur: <br>
@@ -90,5 +57,8 @@
       +49 172 5764 0013 2 | max.webseitenmann@bitchilla.com</p>
       <p class="impressum">&#9400; 2017 All rights reserved by Bitchilla </p>
     </footer>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
   </body>
 </html>
