@@ -1,0 +1,248 @@
+/*                           Colors                   */
+
+.dark-primary-color {
+  background: #00796b;
+}
+
+.default-primary-color {
+  background: #009688;
+}
+
+.light-primary-color {
+  background: #b2dfdb;
+}
+.text-primary-color {
+  color: #ffffff;
+}
+.accent-color {
+  background: #536dfe;
+}
+.primary-text-color {
+  color: #212121;
+}
+.secondary-text-color {
+  color: #757575;
+}
+.divider {
+  background: #bdbdbd;
+}
+.gray {
+  background-color: #b2dfdb;
+  padding-bottom: 50%;
+  clear: both;
+}
+
+.dark-gray {
+  background-color: #00796b;
+}
+
+/** { border : 1px solid black; }*/
+/*                           header                   */
+#headerSection {
+  background-color: #009688;
+}
+
+#workSection {
+  background-color: rgba(51, 176, 183, 0.18);
+}
+
+#educationSection {
+  background-color: rgba(178, 223, 211, 0.19);
+}
+
+#projectSection {
+  background-color: rgba(51, 176, 183, 0.18);
+}
+
+#languageSection {
+  background-color: rgba(178, 223, 211, 0.19);
+}
+
+#mapSection {
+  background-color: rgba(51, 176, 183, 0.18);
+}
+
+
+
+.center-content {
+  padding: 2.5% 5%;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.biopic {
+  float: left;
+  padding: 1%;
+
+}
+
+
+.welcome-message {
+  font-style: italic;
+  font-size: 150%;
+  color: #f3f3f3;
+  line-height: 28%;
+  padding: 1%;
+  display: none;
+}
+
+#skills-h3 {
+  color: #b2dfdb;
+}
+
+
+.language-entry,
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+
+h1 {
+
+  font-size: 200%;
+  color: #00796B;
+  display: inline;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 180%;
+  color: #009688;
+}
+
+h3 {
+
+  font-size: 100%;
+  color: #b2dfdb;
+  /*line-height: 22px;*/
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 100%;
+  color: #757575;
+  line-height: 17%;
+}
+
+.logo{
+  width:45%;
+  height:45%;
+  border:0;
+}
+
+.date-text {
+  font-style: italic;
+  font-size: 100%;
+  color: #999;
+  /*float: left;*/
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 100%;
+  color: #999;
+  line-height: 16%;
+  float: right;
+
+}
+
+a {
+  color: #00796b;
+  font-size: 100%;
+  text-decoration: none;
+  margin-top: 0%;
+  display: block;
+}
+
+.contact-text {
+  color: #b2dfdb;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10%;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+
+
+.imgProject {
+  width: 20%;
+
+}
+
+#lets-connect {
+  text-align: center;
+}
+
+hr {
+    height: 1px;
+    /* Set the hr color */
+}
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 5%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #lets-connect {
+    margin-top: 0%;
+  }
+  .biopic {
+    width: 5%;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  .biopic {
+    width: 20%;
+  }
+}

@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Resume</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"> </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDhWWNW_45q9qMr8Ft8c4SmJVEB66pLCyQ"></script>
   </head>
   <body >
     <header>
@@ -26,8 +26,8 @@
           </div>
       <div id="myNavbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="resume.html">Resume</a></li>
           <li class="dropdown">
              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class=""></span></a>
              <ul class="dropdown-menu">
@@ -43,41 +43,51 @@
     </div>
   </nav>
   <div class="col-md-12 text-center text-uppercase">
-    <h1 class="text-thin title-super">SMI</h1>
+    <h1 class="text-thin title-super">Resume</h1>
   </div>
   </header>
-    <main class="container">
-      <!--Row 2 mini header-->
-            <div class="row">
-              <div class="col-md-12">
-                <h2 class="">Feature Work</h2>
-              </div>
-            </div>
-      <!--projects-->
-            <div class="row text-center firstrow background ">
-              <section class="col-md-4">
-                  <img src="img/Paintv.png" alt="paint" class="img-responsive img-rounded ">
-                  <h3>Paintvocado</h3>
-                  <p><a href="paintvocado.html">Try it out</a></p>
-              </section>
-              <section class="col-md-4">
-                  <img src="img/Matrix.png" alt="matrix" class="img-responsive img-rounded ">
-                  <h3>Matrix multiplicator</h3>
-                  <p><a href="matrix.html">Try it out</a></p>
-              </section>
-              <section class="col-md-4">
-                  <img src="img/World3d.png" alt="G3" class="img-responsive img-rounded ">
-                  <h3>3D World</h3>
-                  <p><a href="sims.html">Try it out</a></p>
-              </section>
-            </div>
-          </main>
-          <footer>
-            <h4>Contact information</h4>
-            <p class="impressum">Verantwortlicher Redakteur: <br>
-            Max Webseitenmann | Ilmenauer Teiche 98693 Ilmenau <br>
-            +49 172 5764 0013 2 | max.webseitenmann@bitchilla.com</p>
-            <p class="impressum">&#9400; 2017 All rights reserved by Bitchilla </p>
-          </footer>
+
+  <main class="container">
+    <section id="headerSection" class="center-content clear-fix">
+      <ul id="topContacts" class="flex-box"></ul>
+    </section>
+
+    <section id="workSection" class="center-content">
+      <h2>Work Experience</h2>
+      <div id="workExperience" class=" work-entry"><hr></div>
+    </section>
+
+    <section id="educationSection" class="center-content">
+      <h2>Education</h2>
+      <div id="education" class=" education-entry"><hr></div>
+    </section>
+
+    <section id="projectSection" class="center-content">
+      <h2>Projects</h2>
+      <div class=" row" id="projects">
+        <div id="entry" class="project-entry"><hr></div>
+      </div>
+    </section>
+
+    <section id="languageSection" class="center-content">
+      <h2>Languages</h2>
+      <div id="language" class=" language-entry"><hr></div>
+    </section>
+
+    <section id="mapSection" class="center-content">
+      <div id="mapDiv">
+        <h2>Where I've lived, studied or worked</h2>
+      </div>
+    </section>
+  </main>
+  <script src="js/helper.js"></script>
+  <script src="js/resumeBuilder.js"></script>
+    <footer>
+      <h4>Contact information</h4>
+      <p class="impressum">Verantwortlicher Redakteur: <br>
+      Max Webseitenmann | Ilmenauer Teiche 98693 Ilmenau <br>
+      +49 172 5764 0013 2 | max.webseitenmann@bitchilla.com</p>
+      <p class="impressum">&#9400; 2017 All rights reserved by Bitchilla </p>
+    </footer>
   </body>
 </html>
