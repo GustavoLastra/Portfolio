@@ -9,8 +9,6 @@
 4. education
 5. language
 */
-
-
 var bio = {
   "name" : "Gustavo Lastra",
   "role" : "Frontend Developer",

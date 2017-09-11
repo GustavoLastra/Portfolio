@@ -200,7 +200,7 @@ ul {
 
 #map {
   display: block;
-  height: 100%;
+  height: 80%;
   margin: 0 5%;
 }
 
@@ -209,6 +209,81 @@ ul {
   width: 100%;
   padding-bottom: 5%;
 }
+
+
+
+.navli {
+  margin-left:  2%;
+  margin-right: 20%;
+}
+
+.options-box {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 100%;
+  /*line-height: 35%;*/
+  padding: 10% 10% 10% 10%;
+  text-align: left;
+  width: 100%;
+}
+#pano {
+  width: 200px;
+  height: 200px;
+}
+
+.overflow {
+  	width: 100%;
+	  white-space: nowrap;
+  	overflow: hidden;
+}
+.ellipsis { text-overflow: ellipsis; }
+.nullRadius {
+  border-radius: 0;
+}
+#map {
+  height: 80%;
+  border: 1px solid #999;
+}
+/* Hamburg Map  */
+/* sideNav  */
+#my-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#my-ul li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 5%;
+  text-decoration: none;
+  font-size: 66%;
+  color: black;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#my-ul li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#my-ul li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.gm-iv-address {
+  height: 70px !important;
+}
+
 
 @media only screen and (min-width: 750px) {
   .biopic {
