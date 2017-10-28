@@ -137,7 +137,7 @@
 }
 
 .white-text {
-  font-weight: bold;
+  font-size: 70%;
   color: #fff;
 }
 
@@ -174,7 +174,7 @@ ul {
 
 @media only screen and (max-width:900px) {
   .biopic {
-    width: 5%;
+    width: 20%;
   }
 }
 
@@ -183,9 +183,15 @@ ul {
     margin-top: 0%;
   }
   .biopic {
-    width: 5%;
+    width: 20%;
   }
   .welcome-message {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  .biopic {
     display: none;
   }
 }

@@ -39,7 +39,7 @@ var bio = {
   ],
   "biopic" : "./img/Gustavo.jpg",
   "welcomeMessage" : "Welcome to my resume",
-  "skills" : ["Hard-working","Attention to Details"],
+  "skills" : ["Languages: HTML5, CSS, Javascript, Phyton, Java, PHP","Libraries/Frameworks: jQuery, Bootstrap, Grunt, React, Django, Knockout, Jasmine", "Others: Git/Github, AJAX, JSON, Restful APIs"],
 
   display : function() {
     var fHeaderName = HTMLheaderName.replace("%data%", bio.name);
@@ -53,8 +53,9 @@ var bio = {
     var fGithub = HTMLgithub.replace("%data%", bio.contacts.github);
     var fSkillOne = HTMLskills.replace("%data%", bio.skills[0]);
     var fSkillTwo = HTMLskills.replace("%data%", bio.skills[1]);
+    var fSkillThree = HTMLskills.replace("%data%", bio.skills[2]);
     var fContacts = [fMobile,fEmail,fGitlab,fLocation,fGithub];
-    var fSkills = [fSkillOne,fSkillTwo];
+    var fSkills = [fSkillOne,fSkillTwo,fSkillThree];
 
 
     $("#headerSection").prepend(fHeaderRole);
