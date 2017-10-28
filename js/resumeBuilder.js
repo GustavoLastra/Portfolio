@@ -143,36 +143,28 @@ var projects = {
       "url" : "https://github.com/GustavoLastra/Portafolio",
       "dates" : "December 2016",
       "description" : "Shows my portafolio of projects",
-      "images" : [
-        "./img/portafolio.png"
-      ]
+
     },
     {
       "title" : "Cars",
       "url" : "https://github.com/GustavoLastra/Cars",
       "dates" : "February 2016",
       "description" : "Javascript Game",
-      "images" : [
-        "./img/cars.jpg"
-      ]
+
     },
     {
       "title" : "Resume",
       "url" : "https://github.com/GustavoLastra/frontend-nanodegree-resume",
       "dates" : "February - Actual",
       "description" : "Shows my Curriculum Vitae",
-      "images" : [
-        "./img/curriculum.png"
-      ]
+
     },
     {
       "title" : "Watson",
       "url" : "https://github.com/GustavoLastra/WatsonNode",
       "dates" : "January 2016",
       "description" : "IBM Watson ALchemylanguage application",
-      "images" : [
-        "./img/watson2.png"
-      ]
+
     }
   ],
   display : function(){
@@ -181,12 +173,8 @@ var projects = {
       var fProjectTitle = HTMLprojectTitle.replace("%data%", project.title).replace("#", project.url );
       var fProjectDates = HTMLprojectDates.replace("%data%",project.dates );
       var fProjectDescription = HTMLprojectDescription.replace("%data%",project.description );
-      var fProjectImage;
-      project.images.forEach(function(image){
-      fProjectImage = HTMLprojectImage.replace("%data%",image);
-      // display formatted image
-      });
-      var fProjects = '<div class="col-xs-4">' + fProjectTitle + fProjectDates + fProjectDescription + fProjectImage + '</div>';
+
+      var fProjects = '<div class="col-xs-4">' + fProjectTitle + fProjectDates + fProjectDescription + '</div>';
       $("#entry").append(fProjects);
     });
   }

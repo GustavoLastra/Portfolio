@@ -2,7 +2,7 @@
 /* CSS Document */
 body{
 	font-family:sans-serif;
-	/*background: rgb(250, 251, 252);*/
+	background-color:#e4e7e8;
 }
 
 html,body {
@@ -16,7 +16,7 @@ html,body {
 hr {
   border: none;
     height: 1px;
-    background-color: #868888;
+    background-color: black;
 }
 
 input[type=number]{
@@ -72,14 +72,14 @@ h1 {
   margin-top: 0%;
   margin-bottom: 0%;
   font-size: 200%;
-  color: #00796B;
+  color: #677472;
   display: inline;
 }
 
 h2 {
   text-align: center;
   font-size: 180%;
-  color: #009688;
+  color: #545454;
 }
 
 h3 {
@@ -103,7 +103,7 @@ main {
 }
 
 a {
-  color: #00796b;
+  color: #383838;
   font-size: 100%;
   text-decoration: none;
   margin-top: 0%;

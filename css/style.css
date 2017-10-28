@@ -1,21 +1,21 @@
 /*                           Colors                   */
 
 .dark-primary-color {
-  background: #00796b;
+  background: #5D5C61;
 }
 
 .default-primary-color {
-  background: #009688;
+  background: #379683;
 }
 
 .light-primary-color {
-  background: #b2dfdb;
+  background: #7395AE;
 }
 .text-primary-color {
-  color: #ffffff;
+  color: #557A95;
 }
 .accent-color {
-  background: #536dfe;
+  background: #B1A296;
 }
 .primary-text-color {
   color: #212121;
@@ -38,27 +38,27 @@
 /** { border : 1px solid black; }*/
 /*                           header                   */
 #headerSection {
-  background-color: #009688;
+  background-color: #5D5C61;
 }
 
 #workSection {
-  background-color: rgba(51, 176, 183, 0.18);
+  background-color: #379683;
 }
 
 #educationSection {
-  background-color: rgba(178, 223, 211, 0.19);
+  background-color: #7395AE;
 }
 
 #projectSection {
-  background-color: rgba(51, 176, 183, 0.18);
+  background-color: #557A95;
 }
 
 #languageSection {
-  background-color: rgba(178, 223, 211, 0.19);
+  background-color: #B1A296;
 }
 
 #mapSection {
-  background-color: rgba(51, 176, 183, 0.18);
+  background-color: #5D5C61;
 }
 
 .row {
@@ -98,7 +98,7 @@
 }
 
 #skills-h3 {
-  color: #b2dfdb;
+  color: #b0b9b9;
 }
 
 
@@ -118,7 +118,7 @@
 .date-text {
   font-style: italic;
   font-size: 100%;
-  color: #999;
+  color: #b7aeae;
   /*float: left;*/
 }
 
@@ -133,7 +133,7 @@
 
 
 .contact-text {
-  color: #b2dfdb;
+  color: #b0b9b9;
 }
 
 .white-text {
