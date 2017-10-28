@@ -27,9 +27,10 @@ var HTMLworkDescription = '<li class="flex-item"><span class="">%data%</span></l
 
 //var HTMLprojectStart = '<div class="project-entry"></div>';
 
-var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectTitle = '<b><a href="#">%data%</a></b>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>'; //
 var HTMLprojectDescription = '<p>%data%</p>';
+var HTMLprojectTools = '<p>%data%</p>';
 var HTMLprojectImage = '<img class="imgProject" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';

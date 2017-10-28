@@ -118,14 +118,14 @@
 .date-text {
   font-style: italic;
   font-size: 100%;
-  color: #b7aeae;
+  color: #504f4f;
   /*float: left;*/
 }
 
 .location-text {
   font-style: italic;
   font-size: 100%;
-  color: #999;
+  color: #504f4f;
   line-height: 16%;
   float: right;
 

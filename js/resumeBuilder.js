@@ -139,32 +139,55 @@ var work = {
 var projects = {
   "projects" : [
     {
-      "title" : "Portafolio",
-      "url" : "https://github.com/GustavoLastra/Portafolio",
-      "dates" : "December 2016",
-      "description" : "Shows my portafolio of projects",
+      "title" : "Portfolio",
+      "url" : "https://gustavolastra.github.io/Portfolio/",
+      "dates" : "January 2017",
+      "description" : "Developed a fully responsive portfolio. It works on mobile, tablet, and desktop browsers.",
+      "tools" : "Tools: HTML, CSS, Bootstrap, Media Queries."
 
     },
     {
-      "title" : "Cars",
-      "url" : "https://github.com/GustavoLastra/Cars",
-      "dates" : "February 2016",
-      "description" : "Javascript Game",
+      "title" : "Bugs (Arcade-Game)",
+      "url" : "https://gustavolastra.github.io/Bugs/",
+      "dates" : "March 2017",
+      "description" : "An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.",
+      "tools" : "Tools: HTML, Javascript, Canvas, JQuery."
 
     },
     {
-      "title" : "Resume",
-      "url" : "https://github.com/GustavoLastra/frontend-nanodegree-resume",
-      "dates" : "February - Actual",
-      "description" : "Shows my Curriculum Vitae",
-
+      "title" : "Online Resume",
+      "url" : "https://gustavolastra.github.io/Resume/",
+      "dates" : "March 2017",
+      "description" : "Developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information.",
+      "tools" : "Tools: HTML, CSS, Bootstrap, media queries, Javascript, JQuery, Googlemaps API."
     },
     {
-      "title" : "Watson",
-      "url" : "https://github.com/GustavoLastra/WatsonNode",
-      "dates" : "January 2016",
-      "description" : "IBM Watson ALchemylanguage application",
-
+      "title" : "Paintvocado",
+      "url" : "https://gustavolastra.github.io/Paintvocado/",
+      "dates" : "April 2017",
+      "description" : "Developed a „Paint“ application.",
+      "tools" : "Tools: HTML, CSS, Bootstrap, media queries, Javascript, Canvas, JQuery"
+    },
+    {
+      "title" : "Website-Optimization",
+      "url" : "https://github.com/GustavoLastra/Website-Optimization",
+      "dates" : "May 2017",
+      "description" : "Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.",
+      "tools" : "Tools: PageSpeed Tools, Chrome Developer Tools."
+    },
+    {
+      "title" : "Map application of Hamburg",
+      "url" : "https://gustavolastra.github.io/Neighborhood-Map/",
+      "dates" : "September 2017",
+      "description" : "A single-page web application, that displays a Google Map of Hamburg and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Wikipedia APIs.",
+      "tools" : "Tools: Google Apis, Knockout.js (MVVM)."
+    },
+    {
+      "title" : "Unit Test-Feedreader",
+      "url" : "https://github.com/GustavoLastra/UnitTest-Feedreader",
+      "dates" : "September 2017",
+      "description" : "Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API.",
+      "tools" : "Tools: Jasmine, JavaScript testing frameworks."
     }
   ],
   display : function(){
@@ -173,8 +196,9 @@ var projects = {
       var fProjectTitle = HTMLprojectTitle.replace("%data%", project.title).replace("#", project.url );
       var fProjectDates = HTMLprojectDates.replace("%data%",project.dates );
       var fProjectDescription = HTMLprojectDescription.replace("%data%",project.description );
+      var fProjectTools = HTMLprojectTools.replace("%data%",project.tools );
 
-      var fProjects = '<div class="col-xs-4">' + fProjectTitle + fProjectDates + fProjectDescription + '</div>';
+      var fProjects = '<div class="col-xs-4">' + fProjectTitle + fProjectDates + fProjectDescription + fProjectTools + '</div>';
       $("#entry").append(fProjects);
     });
   }
