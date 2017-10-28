@@ -37,7 +37,7 @@ var bio = {
       "image" : "img/gitlab.png"
     }
   ],
-  "biopic" : "./img/Gustavo.png",
+  "biopic" : "./img/Gustavo.jpg",
   "welcomeMessage" : "Welcome to my resume",
   "skills" : ["Hard-working","Attention to Details"],
 

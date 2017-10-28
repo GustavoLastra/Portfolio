@@ -69,8 +69,8 @@ footer a:active{
 }
 
 h1 {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 0%;
+  margin-bottom: 0%;
   font-size: 200%;
   color: #00796B;
   display: inline;
@@ -96,9 +96,7 @@ h4 {
   line-height: 17%;
 }
 
-header {
-  margin-bottom: 4%;
-}
+
 
 main {
   margin: 2%;
@@ -238,6 +236,12 @@ legend{
     text-align: center;
 }
 
+@media screen and (min-width: 300px) {
+    body { padding-top: 100px; }
+}
+@media screen and (min-width: 200px) {
+    body { padding-top: 100px; }
+}
 .w3-navbar{
     list-style-type: none;
     margin: 0;
