@@ -199,7 +199,7 @@ var projects = {
       var fProjectDescription = HTMLprojectDescription.replace("%data%",project.description );
       var fProjectTools = HTMLprojectTools.replace("%data%",project.tools );
 
-      var fProjects = '<div class="col-xs-8">' + fProjectTitle + fProjectDates + fProjectDescription + fProjectTools + '</div>';
+      var fProjects = '<div class="col-xs-12">' + fProjectTitle + fProjectDates + fProjectDescription + fProjectTools + '</div>';
       $("#entry").append(fProjects);
     });
   }
