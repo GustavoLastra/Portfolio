@@ -91,10 +91,19 @@ var bio = {
 var work = {
   "jobs" : [
     {
+      "employer" : "Fraunhofer-Institut für Digitale Medientechnologie IDMT",
+      "link" : "https://www.idmt.fraunhofer.de/",
+      "title" : "Frontend Developer",
+      "dates" : " 01 October - Actual",
+      "location" : "Ilmenau, Germany",
+      "description" : "Media project, where a Web Tool is being developed."
+      //"workDescriptionTwo" : "Proactive monitoring and improvement of existing solutions"
+    },
+    {
       "employer" : "BE EXCELLENT",
       "link" : "http://www.bee.io",
       "title" : "Junior Front-End Developer E-Commerce",
-      "dates" : "20 March - Actual",
+      "dates" : "20 March - 31 July",
       "location" : "Jena, Germany",
       "description" : "Application, development and implementation, as well as technical reviews in post-launch phase for our custom software solutions based on the Salesforce Commerce Cloud platform.",
       //"workDescriptionTwo" : "Proactive monitoring and improvement of existing solutions"
