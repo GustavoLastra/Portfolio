@@ -225,7 +225,7 @@ var education = {
       "majors": [
         "Front-End"
       ],
-      "dates" : "October 2016 - September 2018",
+      "dates" : "November 2016 - September 2017",
       "location" : "USA"
     },
     {
