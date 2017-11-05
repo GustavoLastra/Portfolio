@@ -20,8 +20,8 @@ hr {
 }
 
 input[type=number]{
-	width:50px;
-	height:50px;
+	width:100%;
+	height:40px;
 	text-align:center;
 	font-size:14px;
 }
@@ -142,9 +142,25 @@ legend{
 }
 
 .tools {
+	padding: 2%;
+	background-color: #7ea7d1;
 	display: flex;
   flex-direction: column;
   justify-content: center;
+	padding-bottom: 11%;
+}
+
+.toolss {
+	padding: 2%;
+	background-color: rgba(49, 169, 124, 0.44);
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.farbe {
+	width: 100%;
+	height: 40px;
 }
 
 .parameters {
@@ -154,7 +170,6 @@ legend{
 }
 
 .avocado {
-  margin-top: 30%;
 }
 
 .block {

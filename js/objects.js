@@ -159,7 +159,7 @@ var avocado = {
 
 // The drawing variable has this source (the image is save here)
 
-    drawing.src = "img/avocado.png";
+    drawing.src = "img/aguacate.png";
 
 /**
   * Draws the image on the canvas

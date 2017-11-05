@@ -12,13 +12,13 @@
   * @const width
   */
 
-const CANVAS_WIDTH = 350;
+const CANVAS_WIDTH = 360;
 
 /** Holds the value of the height from the canvas element
   * @const height
   */
 
-const CANVAS_HEIGHT = 350;
+const CANVAS_HEIGHT = 480;
 
 /** Holds the frame value of the canvas element
   * @const frame
