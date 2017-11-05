@@ -235,7 +235,7 @@ var education = {
       "majors": [
         "Software engineering"
       ],
-      "dates" : "November 2016 - November 2017",
+      "dates" : "October 2016 - October 2018",
       "location" : "Germany"
     },
     {
